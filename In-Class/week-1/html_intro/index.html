@@ -1,0 +1,158 @@
+<!-- comment-->
+
+<!-- ctr + slash toggle comments -->
+<!-- The document type declaration, html is html 5 -->
+<!-- with no doctype, probably assume a legacy html behavior -->
+<!DOCTYPE html>
+<!-- html elements is the ROOT element -->
+<html>
+<!-- head element for metadata, about document contents -->
+<head>
+    <!-- type of character encoding, default is ASCII -->
+    <!-- Unicode is a namespace of characters -->
+    <!-- utf-8 is standard encoding for Unicode -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- name of the page tag -->
+    <title>Page Title</title>
+    <!-- defines parameters for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- importing css and javascript -->
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <!-- <meta name="something" -->
+    <!-- application-name --- name of webapp --- author -->
+    <!-- description
+    keywords
+        used for search-engine optimization -->
+    <!-- robots -->
+</head>
+<!-- page content -->
+<body>
+    <!-- whitespace doesn't matter -->
+    <!-- css's job to control "layout" like this -->
+    Hello, world!
+    <p>Paragraph</p>
+    <h1>header1</h1>
+    <h6>header6</h6>
+
+    <img src="google.com" alt="oops">
+    <!-- anchor tag -->
+
+    <a href="https:www.google.com">go to google.com</a>
+    <!-- ordered list -->
+    <!-- target="_blank" will open link in new tab -->
+    <ol>
+        <li>bla</li>
+        <li>bla but2</li>
+    </ol>
+    <ul>
+        <li> baa</li>
+        <li>baaa2</li>
+    </ul>
+    <!-- dictionary list -->
+    <dl></dl>
+
+    <p> Line break<br> ouch</p>
+
+    <p><em>emphasized or italics</em></p>
+
+    <p><strong>This text is strong and bold</strong></p>
+
+    <p><u>this text is underlined</u></p>
+
+    <blockquote>
+        to quote
+    </blockquote>
+    <!-- block elements and inline elements -->
+    <!-- block elements "own" there own vertical space -->
+    <!-- p, h1, ol, li ul blockquote -->
+    <!-- inline elements occupy same line -->
+    <!-- br, em, strong, u, img, a -->
+
+    <div>
+        div is a generic block element for anything that doesn't already have a tag defined.
+    </div>
+
+    <span> generic inline element for whens theres
+        no tag.
+    </span>
+
+    <table>
+        <thead>
+            <tr>
+                <td>to many</td>
+                <td>things for table</td>
+            </tr>
+            <tr>
+                <td>gaaa</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- character references -->
+    <!-- a way to tell the browsers to render a character without -->
+    <!-- litterally having it in this file -->
+    <p>&lt;</p> 
+    <!-- lt for less than greater than would be &gt; -->
+    <!-- can also use %#x2012 -->
+
+    <select>
+        <option>option 1</option>
+        <option>option 2</option>
+
+    </select>
+
+    <!-- some new elements in HTML 5 -->
+    <video></video>
+    <audio></audio>
+    <!-- aria attributes -->
+    <!-- replace plugins like Flash with native A/V support -->
+    <!-- can specify more than one source file. -->
+    <!-- transcription support -->
+    <canvas> </canvas>
+    <!-- area of screen to draw 'graphics primitives' -->
+    <!-- accessbility a big focus for HTML 5 -->
+    <!-- Many ARIA attributes help sreen readers -->
+    <thisisprettygeneric>
+        hey
+    </thisisprettygeneric>
+
+    <section></section>
+    <article></article>
+    <aside></aside>
+    <nav></nav>
+
+    <!-- forms -->
+    <!-- Basic HTTP you have get method and post method -->
+    <!-- Get requests have only a URL -->
+    <!-- forms use post to send key value pairs to the server in the http request body -->
+
+    <form method="GET" action="https://google.com/search">
+        <!-- input elements provide a key value pair to the form to be sumitted -->
+        <!-- this will -->
+        <input type="text" name="q">
+        <input type="submit">
+    </form>
+    <!-- this generates https://www.google.com/search?q=hello -->
+    <!-- action is before the ? and name is what is after -->
+    <form method="POST">
+        <label for="num">Enter number:</label>
+        <input type="number" name="num" id="num">
+        <label>Enter True/False:
+            <input type="checkbox" name="bool">
+        </label>
+        <input type="submit">
+        <input type = "text" name="username" placeholder="Username">
+        <!-- placeholder is faded in the background -->
+    </form>
+</body>
+</html>

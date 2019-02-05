@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <img src="global_landscapes_initiative_directory_pages.jpg" style="border-style: solid; border-width: 5px;
+    padding: 5px">
+
+    <h1>About</h1>
+    <p>Some text about the website.</p>
+
+    <h1>Our Locations</h1>
+
+    <ul>
+        <li>USA
+            <ul>
+                <li>New York</li>
+                <li>Columbus</li>
+                <li>Austin</li>
+                <li>Philly</li>
+            </ul>
+        </li>
+        <li>World
+            <ul>
+                <li>
+                    Ottawa
+                </li>
+                <li>
+                    Sydney
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <h1>Upcoming Classes</h1>
+    <table style="border: 1px solid black">
+        <tr>
+            <th style="border: 1px solid black">Location</th>
+            <th style="border: 1px solid black">Topic</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black">New York</td>
+            <td style="border: 1px solid black">JavaScript and JQuery</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black">San Francisco</td>
+            <td style="border: 1px solid black">HTML & CSS</td>
+        </tr>
+    </table>
+
+    <h1>Sign Up!</h1>
+    <form action="POST">
+        <label>Name:
+            <input type="text" id="name">
+        </label>
+        <br>
+        <label>Email:
+            <input type="text">
+        </label>
+        <br>
+        <label>Location:
+            <select name="location">
+                <option value="San Francisco">San Francisco</option>
+                <option value="New York">New York</option>
+            </select>
+        </label>
+        <br>
+        <label style="border: 2px solid black; padding: 2px">
+            Gender
+            <br>
+            <label>Female
+                <input type="radio" name="gender" value="Female">
+            </label>
+            <label>Male
+            <input type="radio" name="gender" value=Male>
+            </label>
+        </label>
+        <br>
+        <label>
+            Experience:
+            <br>
+            <textarea rows="4" cols="50"></textarea>
+        </label>
+        <br>
+        <input type="submit" value="Sign Up">
+        
+    </form>
+</body>
+</html>
